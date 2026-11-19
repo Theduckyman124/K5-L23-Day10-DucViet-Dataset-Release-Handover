@@ -1,0 +1,88 @@
+{
+  "candidates": [
+    {
+      "image": "img_0013",
+      "type": "class_swap / category_swap",
+      "detail": "Lệch lớp (IoU=1.00, phủ mask=100%): Detection ghi 'airplane', Panoptic ghi 'spoon'",
+      "detection_class": "airplane",
+      "panoptic_class": "spoon"
+    },
+    {
+      "image": "img_0016",
+      "type": "instance_merge",
+      "detail": "Segment panoptic lớp 'chair' (id=7723034) phủ pixel trên 2 box detection cùng lớp 'chair'",
+      "candidate_class": "chair"
+    },
+    {
+      "image": "img_0069",
+      "type": "class_swap / category_swap",
+      "detail": "Lệch lớp (IoU=0.97, phủ mask=100%): Detection ghi 'cow', Panoptic ghi 'sheep'",
+      "detection_class": "cow",
+      "panoptic_class": "sheep"
+    },
+    {
+      "image": "img_0090",
+      "type": "instance_merge",
+      "detail": "Segment panoptic lớp 'vase' (id=2780059) phủ pixel trên 2 box detection cùng lớp 'vase'",
+      "candidate_class": "vase"
+    },
+    {
+      "image": "img_0095",
+      "type": "instance_merge",
+      "detail": "Segment panoptic lớp 'bench' (id=13606363) phủ pixel trên 2 box detection cùng lớp 'bench'",
+      "candidate_class": "bench"
+    },
+    {
+      "image": "img_0096",
+      "type": "class_swap / category_swap",
+      "detail": "Lệch lớp (IoU=0.99, phủ mask=100%): Detection ghi 'cat', Panoptic ghi 'dog'",
+      "detection_class": "cat",
+      "panoptic_class": "dog"
+    },
+    {
+      "image": "img_0101",
+      "type": "instance_merge",
+      "detail": "Segment panoptic lớp 'car' (id=14676208) phủ pixel trên 2 box detection cùng lớp 'car'",
+      "candidate_class": "car"
+    },
+    {
+      "image": "img_0149",
+      "type": "bbox_drift",
+      "detail": "Box lớp 'person' bị lệch khỏi mask (IoU=0.61, pixel trong box=91%)",
+      "candidate_class": "person"
+    },
+    {
+      "image": "img_0156",
+      "type": "instance_merge",
+      "detail": "Segment panoptic lớp 'cow' (id=12865579) phủ pixel trên 2 box detection cùng lớp 'cow'",
+      "candidate_class": "cow"
+    },
+    {
+      "image": "img_0159",
+      "type": "class_swap / category_swap",
+      "detail": "Lệch lớp (IoU=1.00, phủ mask=100%): Detection ghi 'person', Panoptic ghi 'zebra'",
+      "detection_class": "person",
+      "panoptic_class": "zebra"
+    },
+    {
+      "image": "img_0165",
+      "type": "missing_box",
+      "detail": "Panoptic có vật 'cat' (pixel=16798) nhưng detection thiếu box",
+      "candidate_class": "cat"
+    },
+    {
+      "image": "img_0186",
+      "type": "class_swap / category_swap",
+      "detail": "Lệch lớp (IoU=0.98, phủ mask=100%): Detection ghi 'bowl', Panoptic ghi 'cup'",
+      "detection_class": "bowl",
+      "panoptic_class": "cup"
+    },
+    {
+      "image": "img_0230",
+      "type": "instance_merge",
+      "detail": "Segment panoptic lớp 'cell phone' (id=14560160) phủ pixel trên 3 box detection cùng lớp 'cell phone'",
+      "candidate_class": "cell phone"
+    }
+  ],
+  "total": 13
+}

@@ -1,0 +1,69 @@
+{
+  "candidates": [
+    {
+      "image": "000000006763",
+      "type": "instance_merge",
+      "detail": "Segment panoptic lớp 'person' (id=3549757) phủ pixel trên 3 box detection cùng lớp 'person'",
+      "candidate_class": "person"
+    },
+    {
+      "image": "000000007511",
+      "type": "missing_box",
+      "detail": "Panoptic có vật 'person' (pixel=14530) nhưng detection thiếu box",
+      "candidate_class": "person"
+    },
+    {
+      "image": "000000007795",
+      "type": "missing_box",
+      "detail": "Panoptic có vật 'bed' (pixel=70150) nhưng detection thiếu box",
+      "candidate_class": "bed"
+    },
+    {
+      "image": "000000009483",
+      "type": "class_swap / category_swap",
+      "detail": "Lệch lớp (IoU=0.99, phủ mask=100%): Detection ghi 'laptop', Panoptic ghi 'tv'",
+      "detection_class": "laptop",
+      "panoptic_class": "tv"
+    },
+    {
+      "image": "000000009590",
+      "type": "instance_merge",
+      "detail": "Segment panoptic lớp 'cup' (id=7170410) phủ pixel trên 2 box detection cùng lớp 'cup'",
+      "candidate_class": "cup"
+    },
+    {
+      "image": "000000013291",
+      "type": "instance_merge",
+      "detail": "Segment panoptic lớp 'frisbee' (id=13419440) phủ pixel trên 2 box detection cùng lớp 'frisbee'",
+      "candidate_class": "frisbee"
+    },
+    {
+      "image": "000000019742",
+      "type": "class_swap / category_swap",
+      "detail": "Lệch lớp (IoU=0.99, phủ mask=100%): Detection ghi 'vase', Panoptic ghi 'baseball bat'",
+      "detection_class": "vase",
+      "panoptic_class": "baseball bat"
+    },
+    {
+      "image": "000000022589",
+      "type": "bbox_drift",
+      "detail": "Box lớp 'sheep' bị lệch khỏi mask (IoU=0.61, pixel trong box=85%)",
+      "candidate_class": "sheep"
+    },
+    {
+      "image": "000000023272",
+      "type": "class_swap / category_swap",
+      "detail": "Lệch lớp (IoU=1.00, phủ mask=100%): Detection ghi 'bus', Panoptic ghi 'car'",
+      "detection_class": "bus",
+      "panoptic_class": "car"
+    },
+    {
+      "image": "000000023781",
+      "type": "class_swap / category_swap",
+      "detail": "Lệch lớp (IoU=0.99, phủ mask=100%): Detection ghi 'carrot', Panoptic ghi 'motorcycle'",
+      "detection_class": "carrot",
+      "panoptic_class": "motorcycle"
+    }
+  ],
+  "total": 10
+}
