@@ -1,0 +1,2 @@
+image,type,verdict,note
+000000009590,instance_merge,confirmed,"TV5 Hưng xem: 2 chiếc cốc (cup) là 2 vật riêng, detection có 2 box cup tách biệt nhưng mask panoptic gộp cả hai vào 1 segment cup"

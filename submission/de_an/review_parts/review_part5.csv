@@ -1,0 +1,3 @@
+image,type,verdict,note
+img_0095,instance_merge,confirmed,"TV5 Hưng xem: có 2 chiếc ghế băng (bench) riêng biệt, detection có 2 box bench nhưng panoptic tô chung 1 segment bench phủ cả hai"
+img_0165,missing_box,confirmed,"TV5 Hưng xem: con mèo (cat) hiện rõ trong ảnh, panoptic có segment cat khoảng 16.8k pixel nhưng file detection không có box cat nào"
