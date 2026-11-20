@@ -1,3 +1,3 @@
 image,type,verdict,note
-img_0069,class_swap,,
-img_0156,instance_merge,,
+img_0069,class_swap,confirmed,"TV3 Bình xem: đàn cừu (sheep) đang ăn cỏ trên đồng cùng người chăn, panoptic ghi sheep đúng nhưng detection gán nhầm 1 con cừu ở góc trái thành cow"
+img_0156,instance_merge,confirmed,"TV3 Bình xem: có các con bò (cow) đứng cạnh hàng rào, detection tách riêng các box cow nhưng mask panoptic lại tô gộp 2 con bò vào chung 1 segment cow"
