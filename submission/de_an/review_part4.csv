@@ -1,0 +1,3 @@
+image,type,verdict,note
+img_0090,instance_merge,confirmed,"NguyenCongBaoLong: Nhieu binh/lo thu tinh treo rieng biet; mot segment panoptic vase toa ra va bao phu tren hai vat rieng le nen xac nhan instance_merge."
+img_0159,category_swap,confirmed,"NguyenCongBaoLong: Anh ro rang la mot ban tre mac dong phuc dang truot van; nhan panoptic ghi zebra la sai nen xac nhan category_swap."

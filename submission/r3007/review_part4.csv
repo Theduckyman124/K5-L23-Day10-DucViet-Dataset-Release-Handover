@@ -1,0 +1,3 @@
+image,type,verdict,note
+000000009483,class_swap,confirmed,"NguyenCongBaoLong: Khung box o phan man hinh phang; vat nay la man hinh may tinh/TV, nhung detection ghi laptop la sai nen xac nhan class_swap."
+000000023781,category_swap,confirmed,"NguyenCongBaoLong: Anh co ca rot va cac loai rau cu; khong co xe may, nen nhan panoptic ghi motorcycle la sai va xac nhan category_swap."
