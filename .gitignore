@@ -8,3 +8,6 @@ __pycache__/
 *.zip
 /hidden
 /delivery
+/de_an
+.vscode/
+phan_viec_nhom_day10.html

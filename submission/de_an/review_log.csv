@@ -1,0 +1,14 @@
+image,type,verdict,note
+img_0013,class_swap,confirmed,"TV1 Đức xem: trên đĩa rau cải xào thịt có chiếc thìa inox ở góc phải trên, panoptic ghi spoon đúng nhưng detection gán nhầm thành airplane"
+img_0101,instance_merge,rejected,"TV1 Đức xem: xe con Audi đen (P14) và xe SUV phía sau (P10) đứng nối đuôi che khuất nhau trên phố, panoptic vẫn tách riêng từng segment xe chứ không gộp"
+img_0230,instance_merge,rejected,"TV1 Đức xem: các thiết bị đặt chồng sát nhau trên laptop nhưng panoptic đã tách riêng P2 (remote), P3 và P4 (2 cell phone), không có 2 điện thoại bị gộp"
+img_0016,instance_merge,confirmed,"TV2 Việt xem: có 2 chiếc ghế (chair) riêng biệt trong ảnh, detection có 2 box chair tách rời nhưng panoptic chỉ có 1 segment chair (id=7723034) phủ pixel lên cả 2 box, 2 ghế bị gộp thành 1 segment"
+img_0149,bbox_drift,confirmed,"TV2 Việt xem: người (person) đứng rõ trong ảnh, detection có box person nhưng bị lệch khỏi vùng mask panoptic (IoU=0.61, 91% pixel mask nằm trong box), box đúng lớp nhưng vị trí bị trượt lệch so với vật thật trong ảnh"
+img_0069,class_swap,confirmed,"TV3 Bình xem: đàn cừu (sheep) đang ăn cỏ trên đồng cùng người chăn, panoptic ghi sheep đúng nhưng detection gán nhầm 1 con cừu ở góc trái thành cow"
+img_0156,instance_merge,confirmed,"TV3 Bình xem: có các con bò (cow) đứng cạnh hàng rào, detection tách riêng các box cow nhưng mask panoptic lại tô gộp 2 con bò vào chung 1 segment cow"
+img_0090,instance_merge,confirmed,NguyenCongBaoLong: Nhieu binh/lo thu tinh treo rieng biet; mot segment panoptic vase toa ra va bao phu tren hai vat rieng le nen xac nhan instance_merge.
+img_0159,category_swap,confirmed,NguyenCongBaoLong: Anh ro rang la mot ban tre mac dong phuc dang truot van; nhan panoptic ghi zebra la sai nen xac nhan category_swap.
+img_0095,instance_merge,confirmed,"TV5 Hưng xem: có 2 chiếc ghế băng (bench) riêng biệt, detection có 2 box bench nhưng panoptic tô chung 1 segment bench phủ cả hai"
+img_0165,missing_box,confirmed,"TV5 Hưng xem: con mèo (cat) hiện rõ trong ảnh, panoptic có segment cat khoảng 16.8k pixel nhưng file detection không có box cat nào"
+img_0096,class_swap,confirmed,"TV6 Đạt xem: góc phải dưới là con chó bulldog Pháp màu trắng tai dơi mõm ngắn, panoptic ghi dog đúng nhưng detection gán nhầm thành cat"
+img_0186,category_swap,confirmed,"TV6 Đạt xem: tranh tĩnh vật, vật giữa bàn là giỏ/bát rộng đựng nho cam lê, detection ghi bowl đúng còn panoptic gán nhầm thành cup"

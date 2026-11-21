@@ -1,4 +1,4 @@
-image,type,verdict,note,reviewer
-000000006763,instance_merge,confirm,"Đối chiếu file: detection có 3 box person (D2, D3, D7), panoptic có 2 segment person, đều iscrowd=0. Cần người xem xác định segment có gộp hai người hay đây là khác biệt tự nhiên.",
-000000019742,class_swap,confirm,Đối chiếu file: D1 có class_id=75 (vase); segment id=1257078 có category_id=39 (baseball bat). Cần xem vật trong ảnh để xác định detection có sai lớp hay không.,
-000000019742,category_swap,confirm,Đối chiếu file: segment id=1257078 ghi baseball bat trong khi D1 ghi vase ở cùng vùng. Cần xem ảnh để xác định panoptic có sai lớp hay không; không xác nhận cả hai giả thuyết chỉ từ bất đồng.,
+image,type,verdict,note
+img_0013,class_swap,confirmed,"TV1 Đức xem: trên đĩa rau cải xào thịt có chiếc thìa inox ở góc phải trên, panoptic ghi spoon đúng nhưng detection gán nhầm thành airplane"
+img_0101,instance_merge,rejected,"TV1 Đức xem: xe con Audi đen (P14) và xe SUV phía sau (P10) đứng nối đuôi che khuất nhau trên phố, panoptic vẫn tách riêng từng segment xe chứ không gộp"
+img_0230,instance_merge,rejected,"TV1 Đức xem: các thiết bị đặt chồng sát nhau trên laptop nhưng panoptic đã tách riêng P2 (remote), P3 và P4 (2 cell phone), không có 2 điện thoại bị gộp"

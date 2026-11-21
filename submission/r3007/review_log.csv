@@ -1,0 +1,11 @@
+image,type,verdict,note
+000000006763,instance_merge,rejected,"TV1 Đức xem: đôi nam nữ phía trước đã được panoptic tách thành 2 segment person riêng biệt, box thứ 3 là người phụ ngồi quay lưng ở mép trái nên là lệch tự nhiên"
+000000019742,category_swap,confirmed,"TV1 Đức xem: vật ở giữa kệ gỗ cạnh cây nến là chiếc bình thủy tinh màu đỏ cam (vase), detection ghi vase đúng còn panoptic gán nhầm thành baseball bat"
+000000007511,missing_box,confirmed,"TV2 Việt xem: trong ảnh có người (person) rõ ràng chiếm vùng lớn khoảng 14530 pixel, panoptic có segment person nhưng detection không có box nào cho người này, thiếu box detection cho vật hiện diện rõ trong ảnh"
+000000022589,bbox_drift,confirmed,"TV2 Việt xem: con cừu (sheep) đứng trên đồng cỏ, detection có box sheep nhưng bị lệch khỏi vùng mask panoptic (IoU=0.61, chỉ 85% pixel mask nằm trong box), box đúng lớp nhưng vị trí bị trượt so với vật thật"
+000000007795,missing_box,confirmed,"TV3 Bình xem: trong phòng ngủ có 2 chiếc giường (bed), panoptic có segment giường lớn phía trước (70150 pixel) nhưng detection chỉ có 1 box cho giường phía sau và thiếu box giường lớn"
+000000023272,class_swap,confirmed,"TV3 Bình xem: con mèo nằm trên nắp capo xe ô tô con (car), panoptic ghi car đúng nhưng nhãn detection lại gán nhầm chiếc xe ô tô này thành bus"
+000000009483,class_swap,confirmed,"NguyenCongBaoLong: Khung box o phan man hinh phang; vat nay la man hinh may tinh/TV, nhung detection ghi laptop la sai nen xac nhan class_swap."
+000000023781,category_swap,confirmed,"NguyenCongBaoLong: Anh co ca rot va cac loai rau cu; khong co xe may, nen nhan panoptic ghi motorcycle la sai va xac nhan category_swap."
+000000009590,instance_merge,confirmed,"TV5 Hưng xem: 2 chiếc cốc (cup) là 2 vật riêng, detection có 2 box cup tách biệt nhưng mask panoptic gộp cả hai vào 1 segment cup"
+000000013291,instance_merge,confirmed,"TV6 Đạt xem: 4 người cầm 4 đĩa frisbee tách rời, detection có đủ 4 box frisbee (D4-D7) nhưng panoptic chỉ có 3 segment, đĩa xanh dương và đĩa xanh lá ở giữa bị gộp thành 1 segment"
