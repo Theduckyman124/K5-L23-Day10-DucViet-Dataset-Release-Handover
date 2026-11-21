@@ -1,0 +1,3 @@
+image,type,verdict,note
+img_0096,class_swap,confirmed,"TV6 Đạt xem: góc phải dưới là con chó bulldog Pháp màu trắng tai dơi mõm ngắn, panoptic ghi dog đúng nhưng detection gán nhầm thành cat"
+img_0186,category_swap,confirmed,"TV6 Đạt xem: tranh tĩnh vật, vật giữa bàn là giỏ/bát rộng đựng nho cam lê, detection ghi bowl đúng còn panoptic gán nhầm thành cup"

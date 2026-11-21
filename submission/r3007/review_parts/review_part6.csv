@@ -1,0 +1,2 @@
+image,type,verdict,note
+000000013291,instance_merge,confirmed,"TV6 Đạt xem: 4 người cầm 4 đĩa frisbee tách rời, detection có đủ 4 box frisbee (D4-D7) nhưng panoptic chỉ có 3 segment, đĩa xanh dương và đĩa xanh lá ở giữa bị gộp thành 1 segment"
