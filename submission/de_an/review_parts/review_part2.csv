@@ -1,0 +1,3 @@
+image,type,verdict,note
+img_0016,instance_merge,confirmed,"TV2 Việt xem: có 2 chiếc ghế (chair) riêng biệt trong ảnh, detection có 2 box chair tách rời nhưng panoptic chỉ có 1 segment chair (id=7723034) phủ pixel lên cả 2 box, 2 ghế bị gộp thành 1 segment"
+img_0149,bbox_drift,confirmed,"TV2 Việt xem: người (person) đứng rõ trong ảnh, detection có box person nhưng bị lệch khỏi vùng mask panoptic (IoU=0.61, 91% pixel mask nằm trong box), box đúng lớp nhưng vị trí bị trượt lệch so với vật thật trong ảnh"

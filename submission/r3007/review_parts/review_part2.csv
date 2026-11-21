@@ -1,0 +1,3 @@
+image,type,verdict,note
+000000007511,missing_box,confirmed,"TV2 Việt xem: trong ảnh có người (person) rõ ràng chiếm vùng lớn khoảng 14530 pixel, panoptic có segment person nhưng detection không có box nào cho người này, thiếu box detection cho vật hiện diện rõ trong ảnh"
+000000022589,bbox_drift,confirmed,"TV2 Việt xem: con cừu (sheep) đứng trên đồng cỏ, detection có box sheep nhưng bị lệch khỏi vùng mask panoptic (IoU=0.61, chỉ 85% pixel mask nằm trong box), box đúng lớp nhưng vị trí bị trượt so với vật thật"
