@@ -1,0 +1,5 @@
+image,type,annotator,reviewer,action
+000000004134,bbox_out_of_bounds,A02,Q01,Chỉnh lại khung bounding box bị tràn ra ngoài biên ảnh
+000000005529,duplicate_box,A05,Q03,Xoá khung bounding box bị lặp trùng lớp và kích thước
+000000013546,invalid_class,A04,Q02,Gán lại nhãn detection có class_id nằm ngoài 0..79
+000000013923,duplicate_box,A04,Q02,Xoá khung bounding box bị lặp trùng lớp và kích thước
