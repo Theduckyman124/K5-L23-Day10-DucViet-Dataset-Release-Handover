@@ -1,0 +1,282 @@
+{
+  "status": "pending_human_review",
+  "source": "runs/r3007/delivery",
+  "images": [
+    {
+      "image": "000000006763",
+      "size": [
+        375,
+        500
+      ],
+      "detections": [
+        {
+          "line": 1,
+          "class_id": 62,
+          "class_name": "tv",
+          "bbox_xywh_pixels": [
+            219.73,
+            64.57,
+            151.35,
+            126.69
+          ]
+        },
+        {
+          "line": 2,
+          "class_id": 0,
+          "class_name": "person",
+          "bbox_xywh_pixels": [
+            79.48,
+            131.87,
+            254.23,
+            331.05
+          ]
+        },
+        {
+          "line": 3,
+          "class_id": 0,
+          "class_name": "person",
+          "bbox_xywh_pixels": [
+            2.53,
+            94.94,
+            234.18,
+            382.28
+          ]
+        },
+        {
+          "line": 4,
+          "class_id": 27,
+          "class_name": "tie",
+          "bbox_xywh_pixels": [
+            136.15,
+            235.58,
+            45.16,
+            180.04
+          ]
+        },
+        {
+          "line": 5,
+          "class_id": 60,
+          "class_name": "dining table",
+          "bbox_xywh_pixels": [
+            2.27,
+            442.18,
+            325.39,
+            52.15
+          ]
+        },
+        {
+          "line": 6,
+          "class_id": 67,
+          "class_name": "cell phone",
+          "bbox_xywh_pixels": [
+            36.02,
+            439.98,
+            35.01,
+            24.31
+          ]
+        },
+        {
+          "line": 7,
+          "class_id": 0,
+          "class_name": "person",
+          "bbox_xywh_pixels": [
+            0.0,
+            212.86,
+            48.54,
+            122.17
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "id": 3549757,
+          "category_id": 1,
+          "iscrowd": 0,
+          "bbox": [
+            0,
+            95,
+            236,
+            380
+          ],
+          "area": 47622,
+          "category_name": "person"
+        },
+        {
+          "id": 4609136,
+          "category_id": 1,
+          "iscrowd": 0,
+          "bbox": [
+            79,
+            132,
+            255,
+            331
+          ],
+          "area": 35939,
+          "category_name": "person"
+        },
+        {
+          "id": 2303288,
+          "category_id": 32,
+          "iscrowd": 0,
+          "bbox": [
+            136,
+            236,
+            45,
+            180
+          ],
+          "area": 5271,
+          "category_name": "tie"
+        },
+        {
+          "id": 2107213,
+          "category_id": 67,
+          "iscrowd": 0,
+          "bbox": [
+            2,
+            442,
+            325,
+            52
+          ],
+          "area": 9127,
+          "category_name": "dining table"
+        },
+        {
+          "id": 6446690,
+          "category_id": 72,
+          "iscrowd": 0,
+          "bbox": [
+            220,
+            65,
+            151,
+            126
+          ],
+          "area": 11257,
+          "category_name": "tv"
+        },
+        {
+          "id": 3552591,
+          "category_id": 77,
+          "iscrowd": 0,
+          "bbox": [
+            36,
+            440,
+            35,
+            24
+          ],
+          "area": 444,
+          "category_name": "cell phone"
+        },
+        {
+          "id": 13102837,
+          "category_id": 130,
+          "iscrowd": 0,
+          "bbox": [
+            0,
+            86,
+            63,
+            42
+          ],
+          "area": 1737,
+          "category_name": "light"
+        },
+        {
+          "id": 1581387,
+          "category_id": 177,
+          "iscrowd": 0,
+          "bbox": [
+            0,
+            237,
+            10,
+            29
+          ],
+          "area": 149,
+          "category_name": "wall-wood"
+        },
+        {
+          "id": 2173519,
+          "category_id": 189,
+          "iscrowd": 0,
+          "bbox": [
+            0,
+            433,
+            340,
+            67
+          ],
+          "area": 2749,
+          "category_name": "table-merged"
+        },
+        {
+          "id": 2043967,
+          "category_id": 199,
+          "iscrowd": 0,
+          "bbox": [
+            0,
+            0,
+            375,
+            293
+          ],
+          "area": 41521,
+          "category_name": "wall-other-merged"
+        }
+      ],
+      "source_sha256": {
+        "image": "e3d8430df8ae6fd8021ca48ce988bcb8a1ae648be8bd3b73b1f0cc9c37f82484",
+        "label": "9b1481bd755fed6ad49dd6f472760f69197dfffc86daa365210f9e44e97a2f27",
+        "mask": "412053f466ddac8f5c1a9a7782c6e52a7f80745c1bb13736ae19491d9a8d4a9d"
+      }
+    },
+    {
+      "image": "000000019742",
+      "size": [
+        500,
+        374
+      ],
+      "detections": [
+        {
+          "line": 1,
+          "class_id": 75,
+          "class_name": "vase",
+          "bbox_xywh_pixels": [
+            172.29,
+            72.38,
+            166.41,
+            274.73
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "id": 1257078,
+          "category_id": 39,
+          "iscrowd": 0,
+          "bbox": [
+            172,
+            72,
+            167,
+            275
+          ],
+          "area": 34436,
+          "category_name": "baseball bat"
+        },
+        {
+          "id": 5729932,
+          "category_id": 177,
+          "iscrowd": 0,
+          "bbox": [
+            0,
+            0,
+            500,
+            374
+          ],
+          "area": 145804,
+          "category_name": "wall-wood"
+        }
+      ],
+      "source_sha256": {
+        "image": "6ccc37eeba5118114222f8de61228e95cf6c28fb631c9e759fcdcd450061337a",
+        "label": "a15e2164c7d605de6d523552d9641516c9589a435d915e542cde49f2db8cf01a",
+        "mask": "aa8ece963c11b51aaa8d9cd0fc88828541e7db95054d9c67978870596dcb5e19"
+      }
+    }
+  ]
+}

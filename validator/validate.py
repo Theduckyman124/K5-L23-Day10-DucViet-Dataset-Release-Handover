@@ -21,6 +21,30 @@ def read_json(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def sha256_file(path: Path) -> str:
+    """Hash the original bytes without text decoding or newline conversion."""
+    digest = hashlib.sha256()
+    with path.open("rb") as stream:
+        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def check_files(root: Path, manifest: dict) -> set[tuple[str, str]]:
+    errors = set()
+    for image, item in manifest.items():
+        for kind in ("image", "label", "mask"):
+            path = root / item[kind]
+            if not path.is_file():
+                if kind == "image":
+                    errors.add(("missing_image", image))
+                # There are no bytes to compare for a missing file.
+                continue
+            if sha256_file(path) != item[kind + "_sha256"]:
+                errors.add(("wrong_hash", image))
+    return errors
+
+
 def validate(root: Path) -> list[dict[str, str]]:
     manifest = read_json(root / "manifest.json")["items"]
     metadata = read_json(root / "metadata.json")["items"]
@@ -35,7 +59,7 @@ def validate(root: Path) -> list[dict[str, str]]:
     categories = {c["id"]: c for c in panoptic["categories"]}
     dimensions = {im["id"]: (im["width"], im["height"]) for im in panoptic["images"]}
     annotations = {Path(a["file_name"]).stem: a for a in panoptic["annotations"]}
-    errors: set[tuple[str, str]] = set()
+    errors = check_files(root, manifest)
     scenes: dict[str, set[str]] = defaultdict(set)
     for item in metadata:
         scenes[item["scene_id"]].add(item["split"])
@@ -46,15 +70,6 @@ def validate(root: Path) -> list[dict[str, str]]:
             errors.add(("scene_leak", scene))
 
     for image, item in manifest.items():
-        for kind in ("image", "label", "mask"):
-            path = root / item[kind]
-            if not path.is_file():
-                if kind == "image":
-                    errors.add(("missing_image", image))
-                continue
-            if hashlib.sha256(path.read_bytes()).hexdigest() != item[kind + "_sha256"]:
-                errors.add(("wrong_hash", image))
-
         annotation = annotations[Path(item["mask"]).stem]
         width, height = dimensions[annotation["image_id"]]
         label = root / item["label"]
