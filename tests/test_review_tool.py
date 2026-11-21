@@ -27,13 +27,13 @@ class ReviewToolTest(unittest.TestCase):
             (delivery / "panoptic.json").write_text(json.dumps({"categories": [{"id": 1, "name": "person", "isthing": 1}], "annotations": [{"file_name": "mask.png", "segments_info": [{"id": 1, "category_id": 1, "bbox": [2, 2, 6, 6]}]}]}))
             output = base / "out"
             tool = Path(__file__).resolve().parents[1] / "tool" / "review_images.py"
-            subprocess.run([sys.executable, str(tool), str(delivery), "--out", str(output)], check=True, capture_output=True, text=True)
+            subprocess.run([sys.executable, str(tool), str(delivery), "--out", str(output)], check=True, capture_output=True, text=True, encoding="utf-8")
             page = (output / "index.html").read_text()
             self.assertIn("Dòng detection 2 không hợp lệ", page)
             self.assertIn("P1: person", page)
             self.assertGreater(Image.open(output / "assets/0_edges.png").getchannel("A").getbbox()[2], 0)
             self.assertEqual((delivery / "label.txt").read_text(), "0 0.5 0.5 0.6 0.6\nbad row\n")
-            inside = subprocess.run([sys.executable, str(tool), str(delivery), "--out", str(delivery / "output")], capture_output=True, text=True)
+            inside = subprocess.run([sys.executable, str(tool), str(delivery), "--out", str(delivery / "output")], capture_output=True, text=True, encoding="utf-8")
             self.assertNotEqual(inside.returncode, 0)
             self.assertFalse((delivery / "output").exists())
 

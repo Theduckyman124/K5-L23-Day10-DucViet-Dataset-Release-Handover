@@ -16,7 +16,15 @@ HAVE_TEST = (ROOT / "data_source" / "coco_panoptic250_test" / "panoptic.json").i
 
 
 def run(script: str, *args: str, check=True) -> subprocess.CompletedProcess:
-    return subprocess.run([sys.executable, str(SCRIPTS / script), *args], check=check, cwd=ROOT, capture_output=True, text=True)
+    return subprocess.run(
+        [sys.executable, "-X", "utf8", str(SCRIPTS / script), *args],
+        check=check,
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+    )
 
 
 class MetricsTest(unittest.TestCase):
