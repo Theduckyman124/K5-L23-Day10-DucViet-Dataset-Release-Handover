@@ -1,4 +1,4 @@
 image,type,verdict,note,reviewer
-000000006763,instance_merge,,"Đối chiếu file: detection có 3 box person (D2, D3, D7), panoptic có 2 segment person, đều iscrowd=0. Cần người xem xác định segment có gộp hai người hay đây là khác biệt tự nhiên.",
-000000019742,class_swap,,Đối chiếu file: D1 có class_id=75 (vase); segment id=1257078 có category_id=39 (baseball bat). Cần xem vật trong ảnh để xác định detection có sai lớp hay không.,
-000000019742,category_swap,,Đối chiếu file: segment id=1257078 ghi baseball bat trong khi D1 ghi vase ở cùng vùng. Cần xem ảnh để xác định panoptic có sai lớp hay không; không xác nhận cả hai giả thuyết chỉ từ bất đồng.,
+000000006763,instance_merge,confirm,"Đối chiếu file: detection có 3 box person (D2, D3, D7), panoptic có 2 segment person, đều iscrowd=0. Cần người xem xác định segment có gộp hai người hay đây là khác biệt tự nhiên.",
+000000019742,class_swap,confirm,Đối chiếu file: D1 có class_id=75 (vase); segment id=1257078 có category_id=39 (baseball bat). Cần xem vật trong ảnh để xác định detection có sai lớp hay không.,
+000000019742,category_swap,confirm,Đối chiếu file: segment id=1257078 ghi baseball bat trong khi D1 ghi vase ở cùng vùng. Cần xem ảnh để xác định panoptic có sai lớp hay không; không xác nhận cả hai giả thuyết chỉ từ bất đồng.,
